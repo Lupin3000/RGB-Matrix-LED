@@ -32,10 +32,10 @@ $ sudo bash rgb-matrix.sh
 
 ```shell
 # clone repository
-$ git clone ...
+$ git clone https://github.com/Lupin3000/RGB-Matrix-LED.git
 
 # change into repository directory
-$ cd ...
+$ cd RGB-Matrix-LED/
 ```
 
 ## Controller
@@ -67,7 +67,7 @@ All games are started very similar:
 $ sudo python -B Pong.py
 
 # run Snake
-sudo python -B Snake.py
+$ sudo python -B Snake.py
 ```
 
 ## Participate the project
