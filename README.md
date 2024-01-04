@@ -62,6 +62,14 @@ $ sudo usermod -a -G input root
 
 > Inside directory `usb` are some files to help with your controller. In case you don't have same you can use these scripts, to configure any other brand. But also adaptations inside `lib/stadia_controller` will be needed!
 
+```shell
+# list all devices (optional)
+$ sudo python -B usb/show_all_devices.py
+
+# show all events
+$ sudo python -B usb/show_device_events.py
+```
+
 ## Execute games
 
 All games are started very similar:
