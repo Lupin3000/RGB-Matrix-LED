@@ -38,7 +38,7 @@ class Point:
 
 
 def get_controller_path() -> str:
-    device_path = '/dev/input/event0'
+    device_path = ''
 
     devices = [InputDevice(path) for path in list_devices()]
     for device in devices:
