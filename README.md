@@ -9,7 +9,7 @@
 
 ## Installation
 
-In case your RGB Matrix LED installation is already done, you only need to ensure Python `evdev` and `git` is installed.
+In case your RGB Matrix LED installation is already done, you only need to ensure `Python evdev` and `git` is installed.
 
 ```shell
 # change to home directory (optional)
