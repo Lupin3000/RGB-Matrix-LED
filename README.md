@@ -9,7 +9,7 @@
 
 ## Installation
 
-In case your RGB Matrix LED installation is already done, you only need to ensure Python `evdev` is installed.
+In case your RGB Matrix LED installation is already done, you only need to ensure Python `evdev` and `git` is installed.
 
 ```shell
 # change to home directory (optional)
@@ -17,9 +17,6 @@ $ cd ~
 
 # update packages (optional)
 $ sudo apt update && sudo apt upgrade -y
-
-# install needed python packages
-$ sudo apt install -y python3-evdev
 
 # get rgb matrix installation script
 $ curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/main/rgb-matrix.sh >rgb-matrix.sh
@@ -29,6 +26,13 @@ $ sudo bash rgb-matrix.sh
 ```
 
 > Please be patient with your installation! This task can take some time. Also verify that installation was successful before you continue.
+
+```shell
+# install needed python packages and git
+$ sudo apt install -y git python3-evdev
+```
+
+Done ... now clone the repository and enjoy the games.
 
 ```shell
 # clone repository
