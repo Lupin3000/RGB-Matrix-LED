@@ -1,8 +1,8 @@
 from random import random
 from threading import Thread
 from time import sleep
-
 from signal import signal, SIGINT
+
 from evdev import ecodes
 from rgbmatrix import RGBMatrix, graphics
 
