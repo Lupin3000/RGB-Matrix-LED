@@ -2,9 +2,11 @@ from random import random
 from threading import Thread
 from time import sleep
 
+from signal import signal, SIGINT
 from evdev import ecodes
 from rgbmatrix import RGBMatrix, graphics
 
+from lib.terminate_application import signal_handler
 from lib.collision_helper import check_circle_line_collision
 from lib.matrix_configuration import options
 from lib.stadia_controller import gamepad
@@ -174,6 +176,8 @@ def flicker() -> None:
 
 
 if __name__ == "__main__":
+    signal(SIGINT, signal_handler)
+
     matrix = RGBMatrix(options=options)
     canvas = matrix.CreateFrameCanvas()
     font = graphics.Font()
