@@ -72,7 +72,7 @@ $ sudo python -B usb/show_device_events.py
 
 ## Execute games
 
-All games are started very similar:
+All games are started very in same way:
 
 ```shell
 # run Pong
@@ -84,6 +84,8 @@ $ sudo python -B Snake.py
 # run Starfighter
 $ sudo python -B Starfighter.py
 ```
+
+> You can stop these games also with `CTRL` + `c` or just wait to lose.
 
 ## Participate the project
 
