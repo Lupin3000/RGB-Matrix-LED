@@ -80,6 +80,9 @@ $ sudo python -B Pong.py
 
 # run Snake
 $ sudo python -B Snake.py
+
+# run Starfighter
+$ sudo python -B Starfighter.py
 ```
 
 ## Participate the project
