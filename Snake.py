@@ -173,9 +173,11 @@ if __name__ == '__main__':
     while True:
         matrix.Clear()
 
+        # game break condition
         if collision:
             break
 
+        # game logic
         if check_point_point_collision(point_a=[snake.pos_x, snake.pos_y], point_b=[fruit.pos_x, fruit.pos_y]):
             segment = SnakeSegment(panel=canvas, x=snake.pos_x, y=snake.pos_y)
             snake_tail_segments.append(segment)
@@ -206,5 +208,6 @@ if __name__ == '__main__':
 
         interface.draw(score)
 
+        # sync matrix canvas
         matrix.SwapOnVSync(canvas)
         sleep(DELAY_IN_SECONDS)

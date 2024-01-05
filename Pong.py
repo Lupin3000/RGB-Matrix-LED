@@ -195,9 +195,11 @@ if __name__ == "__main__":
     while True:
         matrix.Clear()
 
+        # game break condition
         if lives <= 0:
             break
 
+        # game logic
         ball.draw()
         interface.draw()
         paddle.draw()
@@ -211,5 +213,6 @@ if __name__ == "__main__":
         if check_circle_line_collision(circle=circle_list, line=line_list):
             ball.speed_x *= -1
 
+        # sync matrix canvas
         matrix.SwapOnVSync(canvas)
         sleep(DELAY_IN_SECONDS)

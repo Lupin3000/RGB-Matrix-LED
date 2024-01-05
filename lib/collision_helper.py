@@ -32,3 +32,15 @@ def check_point_point_collision(point_a: list, point_b: list) -> bool:
         return True
     else:
         return False
+
+
+def check_point_rectangle_collision(point: list, rectangle: list) -> bool:
+    """
+    Check if a point is inside a rectangle
+    :param point: list of point coordinates (x, y)
+    :param rectangle: list of rectangle coordinates (x, y, width, height)
+    """
+    x_point, y_point = point
+    x_rect, y_rect, width, height = rectangle
+
+    return (x_rect <= x_point <= x_rect + width) and (y_rect <= y_point <= y_rect + height)
